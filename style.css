@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
+    background-color: #fefeff;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #252839;
+}
+
+.navigation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.navigation .navigation__item {
+    position: relative;
+    list-style: none;
+}
+
+.navigation .navigation__item .navigation__link {
+    position: relative;
+    font-size: 4em;
+    text-decoration: none;
+    line-height: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+.navigation .navigation__item .navigation__link::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 8px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+.navigation .navigation__item .navigation__link:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 20px var(--clr));
+}
+
+.tubelight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    min-height: 90vh;
+    background-color: #07252d;
+}
+
+.tubelight__text {
+    position: relative;
+    font-size: 6em;
+    letter-spacing: 15px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+    line-height: 0.70em;
+    outline: none;
+    animation: miror 5s linear infinite;
+}
+
+@keyframes miror {
+
+    0%,
+    16%,
+    28%,
+    57.2%,
+    68%,
+    78.1%,
+    84%,
+    92.3% {
+        color: #0e3742;
+        text-shadow: none;
+    }
+
+    16.2%,
+    28.1%,
+    36%,
+    57%,
+    68%,
+    78.3%,
+    84.1%,
+    92.4%,
+    100% {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+            0 0 20px #03bcf4,
+            0 0 40px #03bcf4,
+            0 0 80px #03bcf4,
+            0 0 160px #03bcf4;
+    }
+}
