@@ -31,6 +31,68 @@
     <div class="tubelight">
         <h1 class="tubelight__text" contenteditable="true">Введи Текст</h1>
     </div>
+    <div class="cards">
+        <div class="cards__navigation">
+            <div class="cards__toggle"></div>
+            <div class="profile">
+                <div class="imgBx">
+                    <img class="portret" src="ruru.jpg" alt="Портрет">
+                </div>
+            </div>
+            <ul class="cards__mune">
+                <li class="cards__list">
+                    <a class="cards__link" href="#">
+                        <span class="cards__icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="cards__text">Профиль</span>
+                    </a>
+                </li>
+                <li class="cards__list">
+                    <a class="cards__link" href="#">
+                        <span class="cards__icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="cards__text">Написать</span>
+                    </a>
+                </li>
+                <li class="cards__list">
+                    <a class="cards__link" href="#">
+                        <span class="cards__icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="cards__text">Настройки</span>
+                    </a>
+                </li>
+                <li class="cards__list">
+                    <a class="cards__link" href="#">
+                        <span class="cards__icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="cards__text">Помощь</span>
+                    </a>
+                </li>
+                <li class="cards__list">
+                    <a class="cards__link" href="#">
+                        <span class="cards__icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="cards__text">Выйти</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <script>
+        const cards__toggle = document.querySelector('.cards__toggle');
+        const cards__navigation = document.querySelector('.cards__navigation');
+        cards__toggle.onclick = function () {
+            cards__navigation.classList.toggle('active')
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
