@@ -6,10 +6,9 @@
     width: 100%;
     padding: 10px;
     transition: .5s;
-    border-top: 1px solid rgba(0, 0, 0, .05);
 }
 
 .cards__navigation.active .cards__menu {
-    padding: 10px 20px;
+    padding: 10px 0;
     align-items: center;
 }

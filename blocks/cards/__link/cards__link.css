@@ -6,7 +6,7 @@
     border-radius: 10px;
 }
 
-.cards__link:hover {
-    background-color: #0084ff;
+.cards__navigation.active .cards__link:hover {
+    background-color: rgba(0, 0, 0, .15);
     color: #fff;
 }

@@ -3,6 +3,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 0;
-    width: 100%;
+    align-self: center;
+    margin: 0;
+    padding: 10px 0;
+    width: 80px;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    border-top: 1px solid rgba(0, 0, 0, .2);
+}
+
+.cards__navigation.active .cards__profile {
+    border-radius: 50%;
+    width: 200px;
+    padding: 10px;
 }
