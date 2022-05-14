@@ -1,0 +1,14 @@
+.side-bar__background {
+    min-height: 100vh;
+    background: url('');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .5s;
+    filter: brightness(60%);
+}
+
+#check:checked~.side-bar__background {
+    transform: scale(1.2);
+    filter: brightness(20%);
+}

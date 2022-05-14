@@ -1,0 +1,23 @@
+.label {
+    position: absolute;
+    right: -40px;
+    top: 30px;
+    font-size: 25px;
+    border-radius: 3px;
+    color: #fff;
+    padding: 3px 8px;
+    cursor: pointer;
+    background: #000;
+}
+
+#logo-buffer {
+    background: red;
+}
+
+#check:checked~.container {
+    transform: translateX(0);
+}
+
+#check:checked~.container #logo-buffer {
+    display: none;
+}

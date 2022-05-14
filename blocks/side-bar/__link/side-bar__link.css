@@ -1,0 +1,11 @@
+.side-bar__link {
+    color: #fbfdce;
+    padding: 15px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: .3s;
+    overflow: hidden;
+}
