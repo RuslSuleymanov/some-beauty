@@ -1,0 +1,40 @@
+@keyframes miror {
+
+    0%,
+    16%,
+    28%,
+    57.2%,
+    68%,
+    78.1%,
+    84%,
+    92.3% {
+        color: #0e3742;
+        text-shadow: none;
+    }
+
+    16.2%,
+    28.1%,
+    36%,
+    57%,
+    68%,
+    78.3%,
+    84.1%,
+    92.4%,
+    100% {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+            0 0 20px #03bcf4,
+            0 0 40px #03bcf4,
+            0 0 80px #03bcf4,
+            0 0 160px #03bcf4;
+    }
+}
+
+.tubelight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 90vh;
+    background-color: #07252d;
+}

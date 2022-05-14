@@ -1,0 +1,26 @@
+.menu__navigation-link {
+    position: relative;
+    font-size: 4em;
+    text-decoration: none;
+    line-height: 1.2em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+.menu__navigation-link::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 8px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+.menu__navigation-link:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 20px var(--clr));
+}

@@ -1,0 +1,15 @@
+.cards__menu {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    transition: .5s;
+    border-top: 1px solid rgba(0, 0, 0, .05);
+}
+
+.cards__navigation.active .cards__menu {
+    padding: 10px 20px;
+    align-items: center;
+}

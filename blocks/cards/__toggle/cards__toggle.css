@@ -1,0 +1,41 @@
+.cards__toggle {
+    position: relative;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+    padding: 0 0 0 20px;
+    width: 100%;
+}
+
+.cards__toggle::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background: #333;
+    transform: translateY(-10px);
+    transition: .5s;
+
+}
+
+.cards__toggle::after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background: #333;
+    transform: translateY(10px);
+    transition: .5s;
+    box-shadow: 0 -10px #333;
+}
+
+.cards__navigation.active .cards__toggle::before {
+    transform: translateY(0) rotate(45deg);
+}
+
+.cards__navigation.active .cards__toggle::after {
+    transform: translateY(0) rotate(-45deg);
+    box-shadow: 0 0 #333;
+}

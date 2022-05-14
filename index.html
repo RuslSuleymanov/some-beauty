@@ -4,42 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Некоторые красивости</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vendor/index.css">
 
 </head>
 
 <body class="content">
-    <div class="menu">
-        <ul class="navigation">
-            <li class="navigation__item" style="--clr:#00ade1">
-                <a class="navigation__link" href="#" data-text="&nbsp;Главная">&nbsp;Главная&nbsp;</a>
+    <section class="menu">
+        <ul class="menu__navigation">
+            <li class="menu__navigation-item" style="--clr:#00ade1">
+                <a class="menu__navigation-link" href="#" data-text="&nbsp;Главная">&nbsp;Главная&nbsp;</a>
             </li>
-            <li class="navigation__item" style="--clr:#7Cfc00">
-                <a class="navigation__link" href="#" data-text="&nbsp;Команда">&nbsp;Команда&nbsp;</a>
+            <li class="menu__navigation-item" style="--clr:#7Cfc00">
+                <a class="menu__navigation-link" href="#" data-text="&nbsp;Команда">&nbsp;Команда&nbsp;</a>
             </li>
-            <li class="navigation__item" style="--clr:#f00">
-                <a class="navigation__link" href="#" data-text="&nbsp;Контент">&nbsp;Контент&nbsp;</a>
+            <li class="menu__navigation-item" style="--clr:#f00">
+                <a class="menu__navigation-link" href="#" data-text="&nbsp;Контент">&nbsp;Контент&nbsp;</a>
             </li>
-            <li class="navigation__item" style="--clr:#ee4de1">
-                <a class="navigation__link" href="#" data-text="&nbsp;Связаться">&nbsp;Связаться&nbsp;</a>
+            <li class="menu__navigation-item" style="--clr:#ee4de1">
+                <a class="menu__navigation-link" href="#" data-text="&nbsp;Связаться">&nbsp;Связаться&nbsp;</a>
             </li>
-            <li class="navigation__item" style="--clr:#ad3">
-                <a class="navigation__link" href="#" data-text="&nbsp;Выйти">&nbsp;Выйти&nbsp;</a>
+            <li class="menu__navigation-item" style="--clr:#fff">
+                <a class="menu__navigation-link" href="#" data-text="&nbsp;Выйти">&nbsp;Выйти&nbsp;</a>
             </li>
         </ul>
-    </div>
-    <div class="tubelight">
+    </section>
+    <section class="tubelight">
         <h1 class="tubelight__text" contenteditable="true">Введи Текст</h1>
-    </div>
-    <div class="cards">
+    </section>
+    <section class="cards">
         <div class="cards__navigation">
             <div class="cards__toggle"></div>
-            <div class="profile">
-                <div class="imgBx">
-                    <img class="portret" src="ruru.jpg" alt="Портрет">
+            <div class="cards__profile">
+                <div class="cards__imgBx">
+                    <img class="cards__portret" src="images/card__profile.jpg" alt="Портрет">
                 </div>
             </div>
-            <ul class="cards__mune">
+            <ul class="cards__menu">
                 <li class="cards__list">
                     <a class="cards__link" href="#">
                         <span class="cards__icon">
@@ -82,9 +82,8 @@
                 </li>
             </ul>
         </div>
-
-    </div>
-    <script>
+    </section>
+    <script aria-label="карточка навигации">
         const cards__toggle = document.querySelector('.cards__toggle');
         const cards__navigation = document.querySelector('.cards__navigation');
         cards__toggle.onclick = function () {

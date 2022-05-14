@@ -1,0 +1,14 @@
+.cards__imgBx {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    transition: .5s;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.cards__navigation.active .cards__profile .cards__imgBx {
+    width: 200px;
+    height: 200px;
+}
